@@ -1,0 +1,162 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	perspective: 1000px;
+   font-family: "Poppins", sans-serif;
+   background: black;
+
+}
+.container{
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+.card{
+	width: 25rem;
+	height: 100vh;
+	border-radius: 20px;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+	background: rgba(255,255,255,0.1);
+	transform-style: preserve-3d;
+
+}
+
+.sneakers{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 35vh;
+
+}
+
+
+.circle{
+	width: 12rem;
+	height: 12rem;
+	background: whitesmoke;
+	position: absolute;
+	border-radius: 50%;
+	z-index: 2;
+	border: none;
+
+
+}
+.sneakers img{
+	width: 12rem;
+	height: 12rem;
+	z-index: 5;
+	border-radius:50% ;
+	border: none;
+	
+}
+.info h1{
+ font-size: solid;
+ text-align: center;
+ color: lightgrey;
+ 
+}
+.info h3{
+ font-size: solid;
+ text-align: center;
+ color: lightgrey;
+ padding: 0.5rem;
+}
+.sizes{
+	display: flex;
+	justify-content: center;
+	margin-top: 4rem;
+
+}
+.sizes button{
+	padding: 20px;
+	width: 6rem;
+	padding: 0.5rem;
+	margin: 5px ;
+	border-radius: 20px;
+	border: none;
+	box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+	background: black;
+	color: whitesmoke;
+	font-weight: lighter;
+}
+.purchase{
+	align-items: center;
+	margin-top: 8rem;
+	/*margin: 30px 20px;*/
+	
+}
+
+.purchase button{
+	width: 20rem;
+	padding: 1rem 0rem;
+	border-radius: 20px;
+	border: none;
+	background: black;
+	text-transform: uppercase;
+	color: whitesmoke;
+	box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+
+}
+.purchase img{
+	width: 22px;
+	height: 22px;
+	margin-right:10px ;
+	margin-top: -2px;
+	padding: 2px;
+}
+
+.purchase h2{
+	font-size: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
