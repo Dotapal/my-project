@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>login animation</title>
+	<style>
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+	body{
+		background: #001219;
+		perspective: 1600px;
+	}
+	nav{
+		width: 100%;
+		height: 6vh;
+		background: transparent;
+		display: flex;
+		justify-content: space-between;
+		align-content: center;
+		position: fixed;
+		z-index: 2;
+	}
+	.container{
+		text-decoration: none;
+		color: red;
+		margin: auto 20px;
+		cursor: pointer;
+		font-weight: bolder;
+		font: poppins,sans-serif;
+	}
+	h1:hover{
+		color: grey;
+	}
+	.items ul{
+		margin-right: 80px;
+		display: flex;
+		margin-top: auto;
+		margin-bottom: auto;
+		padding: 5px 0;
+		text-decoration: none;
+		list-style: none;
+	}
+	.items ul li{
+		letter-spacing:2px ;
+		margin: 5px;
+		font-weight: bolder;
+		font: poppins,sans-serif;
+
+	}
+	.items ul li:hover{
+		color: green;
+		cursor: pointer;
+
+	}
+
+	.hero{
+		width: 100%;
+		max-height: 100vh;
+
+		
+	}
+    .hero img{
+    	width: 100%;
+    	height:100vh ;
+    	
+    }
+    #img-1{
+    	font-size: 8px;
+    	color: white;
+    	margin-left: 5px;
+    	font-weight: bolder;
+    	cursor: pointer;
+
+    }
+    .cam{
+    	width: 200px;
+    	height: 25px;
+    	background: black;
+    	margin: auto;
+    	margin-top: -40px;
+    	border-bottom-left-radius: 15px ;
+    	border-bottom-right-radius: 15px ;
+    	
+    }
+    .spk{
+    	width: 40px;
+    	height: 8px;
+    	background: black;
+    	margin:7px auto;
+    	border-radius: 5px;
+    	border-color: lightgrey;
+    	border-width: 1px;
+    	border-style: solid;
+    	z-index: 5;
+
+    }
+    .card{
+
+    	width: 330px;
+    	height: 655px;
+    	margin: 6% auto;
+    	position: absolute;
+    	padding: 5px 0px;
+    	background: linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.4));
+    	top: 5px;
+    	left: 37%;
+    	border-radius: 30px;
+    	border-width: 9px;
+    	border-style: solid;
+    	border-color: black;
+    	z-index: 2;
+    	overflow-y: hidden;
+    	object-position-right: cover;
+    	transform: rotateX(70deg);
+    
+    }	
+    .card{
+    	border-bottom-width: 30px ;
+    }
+    .forms-1{
+    	display: flex;
+    	justify-content: center;
+    	align-content: center;
+    	flex-direction: column;
+    	margin: 0 auto;	
+    }
+    #img-2{
+    	width: 317px;
+    	height: 590px;
+    	padding: 5px 0px;
+    	margin-top: -30px;
+    	border-top-left-radius:25px ;
+    	border-top-right-radius:26px ;
+    	z-index: -2;
+    	/*animation: bike ;*/
+    
+    }
+    .icon{
+    	width: 310px;
+    	height: 60px;
+    	background: linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.4));
+    	padding: 5px auto;
+    	margin-top: -70px;
+    	border-radius: 20px;
+    	z-index: 1;
+    	transform: translateY(-15px);
+  
+    }
+    ./*icon{
+    	margin-top:-90px ;
+    }*/
+    ::placeholder{
+    	color: #ffba08;
+    	font-weight: bolder;
+    	text-transform: uppercase;
+    	text-align: center;
+    	z-index: 4;
+    }
+    .in-1{
+    	width: 70%;
+    	padding: 5px 0;
+    	margin: 6% auto;
+    	text-align: center;
+    	border-bottom-style: 10px solid  ;
+    	background: transparent;
+    	border-top: 0;
+    	border-left:0 ;
+    	border-right: 0;
+    	border-bottom-color:whitesmoke ;
+    	outline: none;
+
+    }
+    .in-2{
+    	width:90%;
+    	padding: 5px 0;
+    	margin: 0 auto;
+    	text-align: center;
+    	border-bottom-style: 10px solid  ;
+    	background: transparent;
+    	border-top: 0;
+    	border-left:0 ;
+    	border-right: 0;
+    	border-bottom-color:whitesmoke ;
+    	outline: none;
+    }
+   
+    .btn-1{
+    	width: 320px;
+    	height: 68px;
+    	background: black;
+    	margin: -144px auto;
+    	border-bottom-left-radius: 20px;
+    	border-bottom-right-radius: 20px;
+    	z-index: 1;
+    	outline: none;
+    	border: 0;
+    }
+    .btn{
+    	width:50px;
+    	height: 50px;
+    	padding: 7px 0;
+    	background: #212529;
+    	margin: 4px auto;
+    	border-radius: 50%;
+    	cursor: pointer;
+    	/*text-align: center;*/
+    	display: flex;
+    	justify-content: center;
+    	align-items: center;
+    	/*border: none;*/
+    	/*outline: none;*/
+    	color: whitesmoke;
+    	font-weight: bolder;
+    	border-color: white;
+
+    }
+    #safari {
+    	width: 50px;
+    	height: 50px;
+    	margin: 2% auto;
+    	margin-left: 22px;
+    }
+    #whatsapp{
+    	width: 50px;
+    	height: 50px;
+    	margin: 2% auto;
+    	margin-left: 18px;
+    	border-radius: 10px;
+
+    }
+    #viber{
+    	width: 50px;
+    	height: 50px;
+    	margin: 2% auto;
+    	margin-left: 18px;
+    	border-radius: 10px;
+
+    }
+     #photo{
+    	width: 50px;
+    	height: 50px;
+    	margin: 2% auto;
+    	margin-left: 18px;
+    	border-radius: 10px;
+
+    }
+    #network {
+    	width: 12px;
+    	height: 14px;
+    	margin-left: 260px;
+    	margin-top:-140px ;
+    	margin-right: 3px;
+    	cursor: pointer;
+
+    }
+    #wifi{
+    	width: 10px;
+    	height: 15px;
+    	margin-top:-80px ;
+    	margin-right: 3px;
+    	cursor: pointer;
+    }
+    #charge{
+    	width: 12px;
+    	height: 15px;
+    	margin-right: 3px;
+    	cursor: pointer;
+    }
+    /*.pt{
+    	width: 29px;
+    	height: 10px;
+    	background: white;
+    	margin-left: 150px;
+    	margin-top: 80px;
+    	position: absolute;
+    	
+    }*/
+	</style>
+	<!-- <script type="text/javascript" src="https://unpkg.com/webcam-easy/dist/webcam-easy.min.js"></script> -->
+	
+</head>
+<body>
+	<nav>
+		<div class="container">
+			<h1>MyIphone UI</h1>	
+		</div>
+		<div class="items">
+			<ul>
+				<li>SignIn</li>
+				<li>SignUp</li>
+			</ul>
+		</div>
+     </nav>
+	<div class="hero">
+		<!-- <img src="taj.jpeg"> -->
+		<div class="card">
+			<h3  id='img-1'>AIRTEL WIFI</h3>
+			<img id='network' src="network.png">
+			<img id='wifi' src="wifi.png">
+			<img id='charge' src="charge.png">
+			<!-- <img id='img-1'src="email.png"> -->
+			<div class="cam">
+				<div class="spk"></div>
+			</div>
+			<div class="forms-1">
+				
+				<img id='img-2'src="bk.JPG">
+				<div class="icon">
+					<a href="basic.html"><img id='safari' src="safari.png"></a>
+					<img id= 'whatsapp' src="whatsapp.png">
+					<img id='viber' src="viber.png">
+					<img id='photo' src="apps.png">
+				</div>
+			<input type="email" class="in-1" placeholder="email id">
+			<input type="password" class="in-1"placeholder="password" >
+			<div class="btn-1">
+			<button class="btn">touch</button>
+			</div>
+		 </div>
+ <div class="pt"></div>
+		</div>
+	</div>
+	
+	<!-- ///////////////script Tag////////////// -->
+<script>
+	var login = document.querySelector('.btn');
+	// var safari = document.querySelector('#safari');
+	//  safari.addEventListener('mouseover',function(){
+	// 	safari.style.perspective= '1000px';
+	// })
+	login.addEventListener('mouseover',function(){
+		// login.style.width ='250px';
+		login.style.background ='transparent';
+		login.innerHTML = 'id';
+	})
+	login.addEventListener('mouseout',function(){
+		// login.style.width ='200px';
+		login.style.background ='#212529';
+		login.innerHTML = 'touch';
+		
+	})
+
+</script>
+</body>
+</html>
